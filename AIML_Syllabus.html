@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Complete AI and Machine Learning Syllabus</title>
+  <style>
+    :root {
+      --ink: #172a3a;
+      --muted: #536574;
+      --paper: #ffffff;
+      --line: #d7e0e5;
+      --green: #237a57;
+      --green-pale: #eaf5ee;
+      --blue: #286d9c;
+      --blue-pale: #eaf3f9;
+      --orange: #b66a24;
+      --orange-pale: #fff3e5;
+      --teal: #167c79;
+      --teal-pale: #e7f5f3;
+      --red: #b34f45;
+      --red-pale: #fbefed;
+      --slate: #536574;
+      --slate-pale: #eff2f4;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: #e9eef0;
+      font: 10pt/1.48 "Segoe UI", Calibri, sans-serif;
+    }
+    main {
+      width: 210mm;
+      margin: 18px auto;
+      padding: 15mm;
+      background: var(--paper);
+      box-shadow: 0 2px 18px #172a3a20;
+    }
+    .masthead {
+      padding: 13mm 12mm 10mm;
+      color: #fff;
+      background: linear-gradient(115deg, #173f4d, #237a57 62%, #d28a3d);
+      border-radius: 4px;
+    }
+    .eyebrow {
+      margin: 0 0 5px;
+      color: #e5f4e9;
+      font-size: 8pt;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+    }
+    h1 { margin: 0; font-size: 29pt; line-height: 1.12; }
+    .subtitle { margin: 8px 0 0; color: #f4f8f2; font-size: 12pt; }
+    .intro { margin: 11mm 1mm 8mm; color: var(--muted); }
+    .quick-facts {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 7px;
+      margin: 0 0 10mm;
+    }
+    .fact {
+      padding: 9px 11px;
+      border: 1px solid var(--line);
+      border-top: 3px solid var(--green);
+      background: #fbfcfa;
+    }
+    .fact strong { display: block; color: var(--green); font-size: 9pt; }
+    .fact span { color: var(--muted); font-size: 8pt; }
+    .part { margin: 8mm 0 0; break-inside: auto; }
+    .part-heading {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      margin: 0 0 9px;
+      padding: 8px 10px;
+      border-left: 5px solid var(--part);
+      background: var(--pale);
+      break-after: avoid;
+    }
+    .part-number {
+      display: inline-grid;
+      width: 25px;
+      height: 25px;
+      flex: 0 0 25px;
+      place-items: center;
+      color: #fff;
+      background: var(--part);
+      border-radius: 50%;
+      font-size: 8pt;
+      font-weight: 700;
+    }
+    h2 { margin: 0; font-size: 13pt; }
+    .chapter-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+    .chapter {
+      padding: 9px 10px 8px;
+      border: 1px solid var(--line);
+      border-left: 3px solid var(--part);
+      border-radius: 3px;
+      background: #fff;
+      break-inside: avoid;
+    }
+    h3 { margin: 0 0 5px; color: var(--part); font-size: 9.5pt; line-height: 1.3; }
+    ul { margin: 0; padding-left: 16px; color: #344a59; font-size: 8.3pt; }
+    li { margin: 1px 0; }
+    .specializations {
+      padding: 10px 12px;
+      border: 1px solid #d8c99e;
+      border-left: 4px solid var(--orange);
+      background: #fff9ec;
+    }
+    .specializations h3 { color: #8d551d; }
+    .specializations ul { columns: 2; column-gap: 24px; }
+    .tools {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 7px;
+    }
+    .tool {
+      padding: 8px 10px;
+      border: 1px solid var(--line);
+      background: #f8fafb;
+      font-size: 8.5pt;
+    }
+    .tool strong { color: var(--blue); }
+    .capstone {
+      margin-top: 8px;
+      padding: 10px 12px;
+      border: 1px solid #bdd9cd;
+      border-left: 4px solid var(--green);
+      background: var(--green-pale);
+    }
+    .capstone h3 { color: #1e6849; }
+    .footer {
+      margin-top: 12mm;
+      padding-top: 5px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 8pt;
+      text-align: center;
+    }
+    @media print {
+      @page { size: A4; margin: 12mm; }
+      body { background: #fff; font-size: 9.5pt; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      main { width: auto; margin: 0; padding: 0; box-shadow: none; }
+      .masthead { break-inside: avoid; }
+      .part { margin-top: 6mm; }
+      a { color: inherit; text-decoration: none; }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <p class="eyebrow">Complete learning roadmap</p>
+    <h1>AI &amp; Machine Learning</h1>
+    <p class="subtitle">A chapter-wise syllabus from Python foundations to production-ready generative AI</p>
+  </header>
+  <p class="intro">A practical curriculum for building a strong foundation in artificial intelligence and machine learning, progressing from mathematics and data preparation to deep learning, generative AI, responsible practice, and deployment.</p>
+  <div class="quick-facts">
+    <div class="fact"><strong>33 chapters</strong><span>Core subjects and applied practice</span></div>
+    <div class="fact"><strong>6 learning parts</strong><span>Foundations through production systems</span></div>
+    <div class="fact"><strong>Capstone included</strong><span>Build, evaluate, and present a complete project</span></div>
+  </div>
+
+  <section class="part" style="--part:var(--green);--pale:var(--green-pale)">
+    <div class="part-heading"><span class="part-number">01</span><h2>Foundations</h2></div>
+    <div class="chapter-grid">
+      <article class="chapter"><h3>Chapter 1: Introduction to AI and Machine Learning</h3><ul><li>AI, machine learning, deep learning, and generative AI</li><li>Narrow and general AI; real-world applications</li><li>Supervised, unsupervised, semi-supervised, and reinforcement learning</li><li>Typical AI project lifecycle</li></ul></article>
+      <article class="chapter"><h3>Chapter 2: Python for AI/ML</h3><ul><li>Variables, data types, control flow, functions, and classes</li><li>Files, exceptions, modules, and virtual environments</li><li>NumPy arrays and vectorized operations</li><li>pandas, Matplotlib, Seaborn, and notebooks</li></ul></article>
+      <article class="chapter"><h3>Chapter 3: Linear Algebra</h3><ul><li>Scalars, vectors, matrices, and tensors</li><li>Matrix operations, dot products, norms, and distances</li><li>Linear transformations and systems of equations</li><li>Eigenvalues, eigenvectors, and data representation</li></ul></article>
+      <article class="chapter"><h3>Chapter 4: Calculus for Machine Learning</h3><ul><li>Functions, limits, and derivatives</li><li>Partial derivatives, gradients, and the chain rule</li><li>Computational graphs and gradient-based optimization</li><li>Backpropagation intuition</li></ul></article>
+      <article class="chapter"><h3>Chapter 5: Probability and Statistics</h3><ul><li>Descriptive statistics and distributions</li><li>Probability, conditional probability, and Bayes' theorem</li><li>Random variables and common distributions</li><li>Sampling, confidence intervals, hypothesis tests, and correlation</li></ul></article>
+      <article class="chapter"><h3>Chapter 6: Data Collection and Preparation</h3><ul><li>Data sources, formats, inspection, and cleaning</li><li>Missing values, duplicates, and inconsistent records</li><li>Categorical encoding, scaling, and exploratory analysis</li><li>Data leakage, sampling bias, and data splits</li></ul></article>
+    </div>
+  </section>
+
+  <section class="part" style="--part:var(--blue);--pale:var(--blue-pale)">
+    <div class="part-heading"><span class="part-number">02</span><h2>Core Machine Learning</h2></div>
+    <div class="chapter-grid">
+      <article class="chapter"><h3>Chapter 7: Machine Learning Workflow</h3><ul><li>Features, labels, models, and predictions</li><li>Training, validation, testing, and baselines</li><li>Underfitting, overfitting, and generalization</li><li>Reproducible experiments and scikit-learn pipelines</li></ul></article>
+      <article class="chapter"><h3>Chapter 8: Regression</h3><ul><li>Simple, multiple, and polynomial linear regression</li><li>MAE, MSE, and RMSE loss measures</li><li>Assumptions, residuals, and diagnostics</li><li>Ridge, Lasso, and Elastic Net regularization</li></ul></article>
+      <article class="chapter"><h3>Chapter 9: Classification</h3><ul><li>Logistic regression and decision boundaries</li><li>Binary and multiclass classification</li><li>Naive Bayes and k-Nearest Neighbors</li><li>Support Vector Machines and class probabilities</li></ul></article>
+      <article class="chapter"><h3>Chapter 10: Model Evaluation</h3><ul><li>Confusion matrix, accuracy, precision, recall, and F1</li><li>ROC curves and AUC</li><li>Regression metrics and error interpretation</li><li>Class imbalance and problem-appropriate metrics</li></ul></article>
+      <article class="chapter"><h3>Chapter 11: Trees and Ensemble Learning</h3><ul><li>Decision trees and splitting criteria</li><li>Bagging and Random Forests</li><li>Boosting and gradient boosting</li><li>XGBoost, LightGBM, CatBoost, and feature importance</li></ul></article>
+      <article class="chapter"><h3>Chapter 12: Model Selection and Tuning</h3><ul><li>Cross-validation and hyperparameter tuning</li><li>Grid search and randomized search</li><li>Feature selection and model comparison</li><li>Learning curves and validation curves</li></ul></article>
+      <article class="chapter"><h3>Chapter 13: Unsupervised Learning</h3><ul><li>Clustering concepts and distance measures</li><li>k-Means and selecting cluster count</li><li>Hierarchical clustering and DBSCAN</li><li>Cluster evaluation and interpretation</li></ul></article>
+      <article class="chapter"><h3>Chapter 14: Dimensionality Reduction</h3><ul><li>Purpose and trade-offs of dimensionality reduction</li><li>Principal Component Analysis (PCA)</li><li>t-SNE and UMAP for visualization</li><li>Feature extraction versus feature selection</li></ul></article>
+      <article class="chapter"><h3>Chapter 15: Anomaly Detection and Recommenders</h3><ul><li>Outlier detection and Isolation Forest</li><li>Density-based anomaly detection</li><li>Collaborative and content-based filtering</li><li>Ranking metrics and cold-start problems</li></ul></article>
+      <article class="chapter"><h3>Chapter 16: Time-Series Machine Learning</h3><ul><li>Trend, seasonality, and time-series structure</li><li>Time-aware data splitting</li><li>Lag and rolling-window features</li><li>Forecasting metrics and ML forecasting approaches</li></ul></article>
+    </div>
+  </section>
+
+  <section class="part" style="--part:var(--orange);--pale:var(--orange-pale)">
+    <div class="part-heading"><span class="part-number">03</span><h2>Deep Learning</h2></div>
+    <div class="chapter-grid">
+      <article class="chapter"><h3>Chapter 17: Neural Network Fundamentals</h3><ul><li>Neurons, layers, weights, and biases</li><li>Activation and loss functions</li><li>Forward propagation, gradient descent, and backpropagation</li><li>Implement models using PyTorch or TensorFlow</li></ul></article>
+      <article class="chapter"><h3>Chapter 18: Deep Learning Training Techniques</h3><ul><li>SGD, Momentum, Adam, and learning-rate schedules</li><li>Initialization, normalization, and dropout</li><li>Batch size, epochs, and early stopping</li><li>GPU training and experiment tracking</li></ul></article>
+      <article class="chapter"><h3>Chapter 19: Computer Vision</h3><ul><li>Images as tensors; convolution and pooling</li><li>Convolutional Neural Networks (CNNs)</li><li>Image classification, detection, and segmentation</li><li>Transfer learning for vision tasks</li></ul></article>
+      <article class="chapter"><h3>Chapter 20: Natural Language Processing</h3><ul><li>Text cleaning, tokenization, and TF-IDF</li><li>Word embeddings and text classification</li><li>Sentiment analysis and sequence modeling</li><li>Language-system evaluation</li></ul></article>
+      <article class="chapter"><h3>Chapter 21: Sequence Models</h3><ul><li>Recurrent Neural Networks (RNNs)</li><li>Vanishing and exploding gradients</li><li>LSTM and GRU networks</li><li>Sequence-to-sequence applications</li></ul></article>
+      <article class="chapter"><h3>Chapter 22: Transformers and Attention</h3><ul><li>Attention, self-attention, and positional information</li><li>Transformer encoders and decoders</li><li>Pretraining and fine-tuning</li><li>BERT-style, GPT-style, and non-text applications</li></ul></article>
+      <article class="chapter"><h3>Chapter 23: Generative Deep Learning</h3><ul><li>Generative versus discriminative models</li><li>Autoencoders and Variational Autoencoders</li><li>Generative Adversarial Networks and diffusion models</li><li>Generation quality and evaluation challenges</li></ul></article>
+    </div>
+  </section>
+
+  <section class="part" style="--part:var(--teal);--pale:var(--teal-pale)">
+    <div class="part-heading"><span class="part-number">04</span><h2>Modern Generative AI</h2></div>
+    <div class="chapter-grid">
+      <article class="chapter"><h3>Chapter 24: Large Language Model Fundamentals</h3><ul><li>Tokens, tokenization, and context windows</li><li>Pretraining, inference, and decoding</li><li>Temperature and generation controls</li><li>Hallucinations, limitations, and knowledge boundaries</li></ul></article>
+      <article class="chapter"><h3>Chapter 25: Prompting and Structured Outputs</h3><ul><li>Instruction design and prompt structure</li><li>Few-shot prompting and examples</li><li>Schema-constrained structured output</li><li>Tool calling, prompt testing, and evaluation</li></ul></article>
+      <article class="chapter"><h3>Chapter 26: Retrieval-Augmented Generation</h3><ul><li>Embeddings and semantic search</li><li>Document chunking, indexing, and vector databases</li><li>Retrieval, reranking, and grounded generation</li><li>Citations, RAG evaluation, and failure analysis</li></ul></article>
+      <article class="chapter"><h3>Chapter 27: Fine-Tuning and Model Adaptation</h3><ul><li>Choosing prompting, RAG, or fine-tuning</li><li>Dataset preparation and supervised fine-tuning</li><li>Parameter-efficient tuning such as LoRA</li><li>Validation, overfitting, and model versioning</li></ul></article>
+      <article class="chapter"><h3>Chapter 28: AI Agents and Multimodal Systems</h3><ul><li>Agent concepts, planning, and orchestration</li><li>Tools, APIs, bounded autonomy, and human approval</li><li>Text, image, audio, and video inputs</li><li>Multimodal evaluation, security, and reliability</li></ul></article>
+    </div>
+  </section>
+
+  <section class="part" style="--part:var(--red);--pale:var(--red-pale)">
+    <div class="part-heading"><span class="part-number">05</span><h2>Responsible AI and Production</h2></div>
+    <div class="chapter-grid">
+      <article class="chapter"><h3>Chapter 29: Responsible and Explainable AI</h3><ul><li>Fairness, bias, and representation</li><li>Privacy and data protection</li><li>Interpretability and explainability</li><li>Model cards, data documentation, and human oversight</li></ul></article>
+      <article class="chapter"><h3>Chapter 30: MLOps and Model Lifecycle</h3><ul><li>Data and model versioning</li><li>Experiment tracking and reproducible training</li><li>Model registries and deployment lifecycle</li><li>Monitoring, drift detection, retraining, and rollback</li></ul></article>
+      <article class="chapter"><h3>Chapter 31: Deployment and Scaling</h3><ul><li>Prediction APIs and batch or online inference</li><li>Model packaging and dependency management</li><li>Containers and cloud deployment concepts</li><li>Latency, throughput, cost, and edge deployment</li></ul></article>
+      <article class="chapter"><h3>Chapter 32: AI Security and Reliability</h3><ul><li>Input validation and data-quality checks</li><li>Sensitive-data protection and access controls</li><li>Adversarial inputs and model abuse</li><li>Failure testing, logging, and incident response</li></ul></article>
+    </div>
+  </section>
+
+  <section class="part" style="--part:var(--slate);--pale:var(--slate-pale)">
+    <div class="part-heading"><span class="part-number">06</span><h2>Projects and Specializations</h2></div>
+    <article class="capstone"><h3>Chapter 33: End-to-End Capstone Project</h3><ul><li>Define a problem, target users, and measurable success criteria</li><li>Explore data and establish a baseline</li><li>Train and compare at least two suitable models</li><li>Evaluate on held-out data; analyze errors and limitations</li><li>Deliver a simple deployment or usable demonstration</li><li>Document results, reproducibility, and responsible-AI considerations</li></ul></article>
+    <article class="chapter specializations" style="margin-top:8px"><h3>Optional Specialization Topics</h3><ul><li>Reinforcement learning</li><li>Robotics and autonomous systems</li><li>Speech recognition and audio generation</li><li>Graph machine learning</li><li>Causal inference</li><li>Federated and privacy-preserving learning</li><li>Search, ranking, and recommender systems</li><li>Scientific machine learning</li></ul></article>
+    <h3 style="margin:12px 0 7px;color:var(--slate)">Suggested Practical Tools</h3>
+    <div class="tools">
+      <div class="tool"><strong>Programming:</strong> Python</div>
+      <div class="tool"><strong>Data work:</strong> NumPy, pandas, Matplotlib, Seaborn</div>
+      <div class="tool"><strong>Classical ML:</strong> scikit-learn</div>
+      <div class="tool"><strong>Deep learning:</strong> PyTorch or TensorFlow</div>
+      <div class="tool"><strong>Generative AI:</strong> Hugging Face tools and model APIs</div>
+      <div class="tool"><strong>Development:</strong> Jupyter, Git, and a code editor</div>
+      <div class="tool"><strong>Deployment:</strong> FastAPI or Flask, Docker, and cloud services</div>
+    </div>
+  </section>
+  <footer class="footer">AI &amp; Machine Learning | Complete chapter-wise syllabus</footer>
+</main>
+</body>
+</html>
